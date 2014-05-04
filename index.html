@@ -8,9 +8,31 @@
 
     <link rel="stylesheet" href="css/main.css"/>
     <script src="js/main.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> 
+    <script> function test(){
+    	 console.log($);
+      $.ajax({
+            type: 'GET',
+            url: 'http://weather.yahooapis.com/forecastrss?w=2211096',
+
+            dataType: "text xml",
+
+            crossDomain: true,
+            success: function (msg) {
+
+                alert("success");
+
+            },
+            error: function (request, status, error) {
+
+                alert(request);
+            }
+        });
+    }
+     </script>
 
 </head>
-<body onload="weather_app()" id="body">
+<body onload="test()" id="body">
 <div>Today</div>
 <div><h1 id="temp">26&deg;</h1></div>
 <div><span class="glyphicon glyphicon-arrow-down">31 </span><span class="glyphicon glyphicon-arrow-up">39</span></div>
