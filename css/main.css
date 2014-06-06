@@ -1,0 +1,7 @@
+@font-face {
+    font-family: xperia;
+    src: url(./fonts/Xperia.ttf);
+}
+body{
+    font-family: xperia;
+}
