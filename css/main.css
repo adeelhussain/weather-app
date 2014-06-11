@@ -2,6 +2,51 @@
     font-family: xperia;
     src: url(./fonts/Xperia.ttf);
 }
+html{
+    height: 100%;
+}
 body{
     font-family: xperia;
+}
+.alert{
+    border-bottom: none;
+    box-shadow: none;
+}
+.responsiveCenter{
+    text-align: center;
+}
+@media(min-width: 768px){
+
+}
+
+
+
+
+
+
+
+
+
+.alert-info .navbar-fixed-top{
+    background-color: rgba(58, 147, 183, 0.67);
+    opacity: .5;
+    min-height: 50px;
+}
+.navbar-fixed-bottom{
+    padding-bottom: 10px;
+    /*background-color: red;*/
+}
+.navbar-fixed-bottom .bottomControls{
+    background-color: rgba(70, 162, 209, 0.15);
+    min-height: 60px;
+}
+.navbar-fixed-bottom [class^="col-xs-"]{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.mainContent{
+    /*margin-top: -35px;*/
+}
+svg{
+    float: none;
 }
