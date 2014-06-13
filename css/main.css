@@ -6,7 +6,7 @@ html{
     height: 100%;
 }
 body{
-    font-family: xperia;
+    font-family: 'calibri';
 }
 .alert{
     border-bottom: none;
@@ -45,8 +45,26 @@ body{
     padding-right: 5px;
 }
 .mainContent{
-    /*margin-top: -35px;*/
+    margin-top: -25px;
 }
+
+.mainContent h1{
+    margin-bottom: 0;
+    font-weight: 100;
+    font-size: 50px;
+}
+.mainContent h2{
+    margin-top: 0;
+    font-weight: bolder;
+    font-size: 40px;
+}
+
 svg{
     float: none;
+}
+#forecastIcon{
+    margin-top: -10px;
+}
+#forecastIcon svg path{
+    fill : white;
 }
