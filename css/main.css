@@ -27,10 +27,21 @@ body{
 
 
 
-.alert-info .navbar-fixed-top{
-    background-color: rgba(58, 147, 183, 0.67);
+.navbar-fixed-top{
     opacity: .5;
     min-height: 50px;
+}
+.navbar-fixed-top #timeStamp{
+    margin: 15px;
+}
+.navbar-fixed-top span.glyphicon-search{
+    font-size: 30px;
+    margin: 9px;
+    margin-left: 12px;
+    color: white;
+}
+.alert-info .navbar-fixed-top{
+    background-color: rgba(58, 147, 183, 0.67);
 }
 .navbar-fixed-bottom{
     padding-bottom: 10px;
@@ -56,11 +67,25 @@ body{
 .mainContent h2{
     margin-top: 0;
     font-weight: bolder;
-    font-size: 40px;
+    font-size: 42px;
+    letter-spacing: 2px;
 }
 
 svg{
     float: none;
+    fill: white;
+}
+svg.socialIcon{
+    margin-top: 5px;
+    fill: white;
+    max-height: 50%;
+    max-width: 50%;
+}
+span.socialIcon{
+    margin-top: 6px;
+    margin-bottom: 13px;
+    font-size: 30px;
+    color: white;
 }
 #forecastIcon{
     margin-top: -10px;

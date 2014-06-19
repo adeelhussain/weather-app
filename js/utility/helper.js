@@ -14,5 +14,11 @@
     }
 
 
+    function getTimeStamp(){
+        var date = new Date();
+        return date.toDateString()+" | "+ date.getHours()+":"+date.getMinutes()+" "+ date.toLocaleTimeString().split(" ")[1];
+    }
+
+
 
 
