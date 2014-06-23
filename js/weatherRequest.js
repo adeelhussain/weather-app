@@ -66,9 +66,9 @@ function success(pos) {
     console.log('More or less ' + crd.accuracy + ' meters.');
     console.log(crd);
     lat =  crd.latitude;
-    lon = crd.logitude;
+    lon = crd.longitude;
     var url = "http://api.openweathermap.org/data/2.5/weather?lat="+lat+"&lon="+lon;
-
+    console.log(url);
     req.open("GET", url, true);
 
 

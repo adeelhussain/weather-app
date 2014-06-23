@@ -8,6 +8,9 @@ html{
 body{
     font-family: 'calibri';
 }
+.container{
+    padding-top: 50px;
+}
 .alert{
     border-bottom: none;
     box-shadow: none;
@@ -36,6 +39,7 @@ body{
 }
 .navbar-fixed-top input#searchInput{
     /*display: none;*/
+    width: calc(100% - 70px);
     margin: 8px;
 }
 .navbar-fixed-top span.glyphicon-search{

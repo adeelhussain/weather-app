@@ -1,6 +1,7 @@
-document.getElementsByClassName("flip")[0].getElementsByClassName("glyphicon-search").forEach(function(element, key){
+
+[].forEach.call(document.getElementsByClassName("glyphicon-search") ,function(element, key){
     element.addEventListener("click", function() {
-    var val = this.getElementsByClassName("card")[0];
+    var val = document.getElementsByClassName("card")[0];
     if (val.className.indexOf("flipped") + 1) {
         val.className = val.className.replace("flipped", "");
     }

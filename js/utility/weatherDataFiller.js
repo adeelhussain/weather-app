@@ -40,8 +40,8 @@ function fillWeatherData (data){
 
     weather = new Weather();
     weather.setdayNightTime({
-        sunset:data.sys.sunset,
-        sunrise:data.sys.sunrise
+        sunset:data.sys.sunset*1000,
+        sunrise:data.sys.sunrise*1000
     });
     weather.setAttribute(
         {main: data.weather[0].main,
