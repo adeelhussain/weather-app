@@ -118,8 +118,8 @@
 
                 <div class="clearfix"></div>
                 <div class="mainContent">
-                    <h1>Karachi</h1>
-                    <div><h2 id="temp">26&deg;C</h2></div>
+                    <h1 id="region"></h1>
+                    <div><h2 id="temp"></h2></div>
                     <!--<div class="row pad-bot30">
                         <div class="pad-left40">
                             <div class="col-xs-6 col-sm-4 col-md-3 "><span class="glyphicon glyphicon-arrow-down">31 </span> &nbsp; <span class="glyphicon glyphicon-arrow-up">39</span></div>
@@ -195,32 +195,26 @@
     </div>
 </div>
 <script>
-    callAjax('svgs/weather/cloudRain.svg', function(data){
-        document.getElementById('forecastIcon').innerHTML = data;
-    });
-    document.getElementById("timeStamp").innerHTML = getTimeStamp();
-    setInterval(function(){
+    weatherRequest(function(){
+
+        var weather = dataSet.weather.getAttribute();
+        var location = dataSet.location.getAttributes();
+        var temperature = dataSet.temperature.getAttributes();
+
+        callAjax('svgs/weather/'+weather.icon+'.svg', function(data){
+            document.getElementById('forecastIcon').innerHTML = data;
+        });
         document.getElementById("timeStamp").innerHTML = getTimeStamp();
-    }, 60000);
+        setInterval(function(){
+            document.getElementById("timeStamp").innerHTML = getTimeStamp();
+        }, 60000);
 
-    /* document.getElementById("searchIcon").addEventListener("click", function(){
-     if(document.getElementById("timeStamp").style.display == "none") {
-     document.getElementById("timeStamp").style.display = "block";
-     document.getElementById("searchInput").style.display = "none";
-     }
-     else{
-     document.getElementById("timeStamp").style.display = "none";
-     document.getElementById("searchInput").style.display = "block";
-     }
-     })*/
+        document.getElementById("region").innerHTML = location.region;
+        document.getElementById("temp").innerHTML = parseInt(temperature.temperatureC)+"&deg;C";
 
-    /*$('.flip').click(function(){
-     $(this).find('.card').addClass('flipped').mouseleave(function(){
-     $(this).removeClass('flipped');
-     });
-     return false;
-     });
-     */
+    });
+
+
 
 
 </script>

@@ -3,8 +3,8 @@
  */
 
     ////////////////////
-window.w_req = weatherRequest;
-function weatherRequest(){
+//window.w_req = weatherRequest;
+function weatherRequest(callback){
 function createRequest() {
     var result = null;
     if (window.XMLHttpRequest) {
@@ -43,6 +43,7 @@ req.onreadystatechange = function() {
     fillWeatherData(JSON.parse(resp));
     window.resp = resp;
     console.log(resp)
+    callback()
 }
 
 //var url = 'https://search.yahoo.com/sugg/gossip/gossip-gl-location/?appid=weather&output=sd1&p2=pt&command=%5Bkarachi%5D';
@@ -70,8 +71,6 @@ function success(pos) {
     var url = "http://api.openweathermap.org/data/2.5/weather?lat="+lat+"&lon="+lon;
     console.log(url);
     req.open("GET", url, true);
-
-
     req.send()
 
 };

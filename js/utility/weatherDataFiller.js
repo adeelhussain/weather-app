@@ -44,7 +44,9 @@ function fillWeatherData (data){
         sunrise:data.sys.sunrise*1000
     });
     weather.setAttribute(
-        {main: data.weather[0].main,
+
+        {   icon: data.weather[0].icon,
+            main: data.weather[0].main,
             description:data.weather[0].description,
             pressure:data.main.pressure,
             seaLevel:data.main.sea_level,
