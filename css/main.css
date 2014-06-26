@@ -31,7 +31,6 @@ body{
 
 
 .navbar-fixed-top{
-    opacity: .5;
     min-height: 50px;
 }
 .navbar-fixed-top #timeStamp{
@@ -64,7 +63,7 @@ body{
     padding-right: 5px;
 }
 .mainContent{
-    margin-top: -25px;
+    margin-top: -50px;
 }
 
 .mainContent h1{
@@ -100,6 +99,9 @@ span.socialIcon{
 }
 #forecastIcon svg path{
     fill : white;
+}
+#forecastIcon svg path[fill]{
+    fill : transparent;
 }
 
 
@@ -147,3 +149,136 @@ span.socialIcon{
     cursor: pointer;
 }
 /*end : flip classes*/
+
+
+
+
+
+/*start : theme avocado*/
+.avocado{
+    background-color: #98c6cc;
+    background-image: none;
+    color: #589299;
+}
+.avocado .navbar-fixed-top{
+    background-color: #6aa0a7;
+}
+.avocado .navbar-fixed-bottom .bottomControls{
+    background-color: #bde1e6;
+}
+
+
+/*end : theme avocado*/
+
+
+/*start : theme nectarine*/
+.nectarine{
+    background-color: #cc9e98;
+    background-image: none;
+    color: #9b6059;
+}
+.nectarine .navbar-fixed-top{
+    background-color: #a77069;
+}
+.nectarine .navbar-fixed-bottom .bottomControls{
+    background-color: #e4c1bb;
+}
+
+
+/*end : theme nectarine*/
+
+/*start : theme Noni*/
+.Noni{
+    background-color: #98cbb4;
+    background-image: none;
+    color: #549776;
+}
+.Noni .navbar-fixed-top{
+    background-color: #6ba78b;
+}
+.Noni .navbar-fixed-bottom .bottomControls{
+    background-color: #bce7d2;
+}
+
+
+/*end : theme Noni*/
+
+/*start : theme jamun*/
+.jamun{
+    background-color: #989acc;
+    background-image: none;
+    color: #575897;
+}
+.jamun .navbar-fixed-top{
+    background-color: #6b6ba7;
+}
+.jamun .navbar-fixed-bottom .bottomControls{
+    background-color: #bebde7;
+}
+
+
+/*end : theme jamun*/
+
+/*start : theme raisin*/
+.raisin{
+    background-color: #ccc497;
+    background-image: none;
+    color: #98895a;
+}
+.raisin .navbar-fixed-top{
+    background-color: #a79d6a;
+}
+.raisin .navbar-fixed-bottom .bottomControls{
+    background-color: #e6e0be;
+}
+
+
+/*end : theme raisin*/
+
+/*start : theme berry*/
+.berry{
+    background-color: #98b1cc;
+    background-image: none;
+    color: #567493;
+}
+.berry .navbar-fixed-top{
+    background-color: #6a87a7;
+}
+.berry .navbar-fixed-bottom .bottomControls{
+    background-color: #becfe6;
+}
+
+
+/*end : theme berry*/
+
+/*start : theme strawberry*/
+.strawberry{
+    background-color: #c89cc2;
+    background-image: none;
+    color: #9f6d97;
+}
+.strawberry .navbar-fixed-top{
+    background-color: #a16e9c;
+}
+.strawberry .navbar-fixed-bottom .bottomControls{
+    background-color: #e3c0de;
+}
+
+
+/*end : theme strawberry*/
+
+/*start : theme Cherymoya*/
+.Cherymoya{
+    background-color: #a3b588;
+    background-image: none;
+    color: #819c5d;
+}
+.Cherymoya .navbar-fixed-top{
+    background-color: #6f894f;
+}
+.Cherymoya .navbar-fixed-bottom .bottomControls{
+    background-color: #b5cc99;
+}
+
+
+/*end : theme Cherymoya*/

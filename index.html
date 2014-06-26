@@ -79,7 +79,7 @@
     </script>
 
 </head>
-<body onload="test()" id="body" class="alert alert-info">
+<body onload="test()" id="body" class="alert alert-info berry">
 
 
 <div id="viewport">
@@ -210,6 +210,11 @@
         }, 60000);
 
         document.getElementById("region").innerHTML = location.region;
+        if(location.region.length > 10){
+            document.getElementById("region").style.fontSize = "30px"
+        }else if(location.region.length > 15){
+            document.getElementById("region").style.fontSize = "25px"
+        }
         document.getElementById("temp").innerHTML = parseInt(temperature.temperatureC)+"&deg;C";
 
     });
