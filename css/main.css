@@ -7,6 +7,7 @@ html{
 }
 body{
     font-family: 'calibri';
+    height: 100%;
 }
 .container{
     padding-top: 50px;
@@ -152,6 +153,51 @@ span.socialIcon{
 
 
 
+/*start : shatterCheckbox*/
+
+#shatterCheckbox{
+    display: none;
+}
+#shatterCheckbox:checked ~ #shatter{
+    bottom: auto;
+    transform: translateY(100%);
+}
+#shatter{
+    top: -290px;
+    opacity: .9;
+    height: 290px;
+    transition: transform ease-in-out 1s;
+}
+#shatter .themesTitle{
+}
+#shatter .themes{
+    color: #ffffff;
+    cursor: pointer;
+    height: 50px;
+    padding: 12px;
+    margin-bottom: 20px;
+}
+#shatter .themes img{
+    padding: 1px;
+    max-width: 70%;
+    margin: auto;
+}
+body{
+    transition: transform ease-in-out 1s;
+}
+body.shatter{
+    transform: translateY(290px);
+}
+
+/*end : shatterCheckbox*/
+
+
+
+
+
+
+
+
 
 
 /*start : theme avocado*/
@@ -187,21 +233,21 @@ span.socialIcon{
 
 /*end : theme nectarine*/
 
-/*start : theme Noni*/
-.Noni{
+/*start : theme noni*/
+.noni{
     background-color: #98cbb4;
     background-image: none;
     color: #549776;
 }
-.Noni .navbar-fixed-top{
+.noni .navbar-fixed-top{
     background-color: #6ba78b;
 }
-.Noni .navbar-fixed-bottom .bottomControls{
+.noni .navbar-fixed-bottom .bottomControls{
     background-color: #bce7d2;
 }
 
 
-/*end : theme Noni*/
+/*end : theme noni*/
 
 /*start : theme jamun*/
 .jamun{
