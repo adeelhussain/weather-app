@@ -1,13 +1,10 @@
-@font-face {
-    font-family: xperia;
-    src: url(./fonts/Xperia.ttf);
-}
 html{
     height: 100%;
 }
 body{
     font-family: 'calibri';
     height: 100%;
+    margin: 0;
 }
 .container{
     padding-top: 50px;
@@ -154,21 +151,19 @@ span.socialIcon{
 
 
 /*start : shatterCheckbox*/
-
+/*
 #shatterCheckbox{
     display: none;
 }
 #shatterCheckbox:checked ~ #shatter{
     bottom: auto;
     transform: translateY(100%);
-}
+}*/
 #shatter{
     top: -290px;
     opacity: .9;
     height: 290px;
     transition: transform ease-in-out 1s;
-}
-#shatter .themesTitle{
 }
 #shatter .themes{
     color: #ffffff;
