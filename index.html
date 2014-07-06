@@ -186,19 +186,31 @@
 
         callAjax('svgs/weather/'+weather.icon+'.svg', function(data){
             document.getElementById('forecastIcon').innerHTML = data;
+
+            document.getElementById('forecastIcon').className += 'animated fadeInUp';
+
+
         });
         document.getElementById("timeStamp").innerHTML = getTimeStamp();
         setInterval(function(){
             document.getElementById("timeStamp").innerHTML = getTimeStamp();
         }, 60000);
 
-        document.getElementById("region").innerHTML = location.region;
+        setTimeout(function(){
+            document.getElementById("region").innerHTML = location.region;
+            document.getElementById("region").className += 'animated fadeInUp';
+        }, 500);
         if(location.region.length > 10){
             document.getElementById("region").style.fontSize = "30px"
         }else if(location.region.length > 15){
             document.getElementById("region").style.fontSize = "25px"
         }
-        document.getElementById("temp").innerHTML = parseInt(temperature.temperatureC)+"&deg;C";
+        setTimeout(function(){
+            document.getElementById("temp").innerHTML = parseInt(temperature.temperatureC)+"&deg;C";
+            document.getElementById("temp").className += 'animated fadeInUp';
+        }, 1000)
+
+
 
     });
 
